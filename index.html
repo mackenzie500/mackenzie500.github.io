@@ -3,10 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Academic Portfolio & Research</title>
+    <meta name="description" content="Personal academic and research portfolio website.">
+    
+    <!-- Tailwind CSS for clean structural layout -->
+    <script src="https://jsdelivr.net"></script>
 </head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my GitHub personal website.</p>
-</body>
-</html>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header Navigation Links -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur shadow-sm z-50 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="text-lg font-bold text-slate-900">Portfolio</span>
+            <nav class="space-x-4 md:space-x-6 text-sm font-medium">
+                <a href="#education" class="hover:text-blue-600 transition">Education</a>
+                <a href="#research" class="hover:text-blue-600 transition">Research</a>
+                <a href="#presentations" class="hover:text-blue-600 transition">Presentations</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#awards" class="hover:text-blue-600 transition">Awards</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- Education Section -->
+        <section id="education" class="scroll-mt-20 space-y-4">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900">EDUCATION</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-lg">Sonoma State University, Rohnert Park, CA</h3>
+                    <p class="text-slate-700">Statistics (BS) & Mathematics, Applied Mathematics Concentration (BS), Minor in Computer Science</p>
+                    <p class="text-sm text-slate-500">August 2025 - Present</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 text-lg">Santa Rosa Junior College, Santa Rosa, CA</h3>
+                    <p class="text-slate-700">Mathematics (AS-T) & Natural Sciences (AS), Honors</p>
+                    <p class="text-sm text-slate-500">August 2023 - May 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="research" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900">RESEARCH EXPERIENCE & PROJECTS</h2>
+            
+            <div class="space-y-6">
+                <!-- Project 1: MERG -->
+                <div class="space-y-2">
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg">Mathematical Epidemiology Research Group (MERG)</h3>
+                        <p class="text-sm font-semibold text-blue-700">Sonoma State University, Rohnert Park, CA — Undergraduate Researcher</p>
+                        <p class="text-xs text-slate-500">Department of Mathematics and Statistics | January 2026 - Present</p>
+                        <p class="text-xs text-slate-500">Advisor: Dr. Omayra Ortega | Collaborators: Bella Bibayoff, Adriana Galido Silva, Raven Genova, Merveille Maquelin, Sabikun Prioty, Micah Reyes, Cora Rice, Cristobal Zuniga, Maggie Beal, Isabella Lopez-Rivas, & Concordio Leavitt</p>
+                    </div>
+                    <div class="pl-4 border-l-2 border-slate-200">
+                        <h4 class="font-semibold text-slate-800">Effects of Climate Change on Valley Fever: A Markov Model in R:</h4>
+                        <p class="text-slate-600 text-sm">Modeled Valley Fever using dynamic Markov Chain model in <strong>R</strong>, integrating PRISM and CoSMoS climate datasets to predict shifts in endemic regions.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: MSRI-UP -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Parallel Mesh Refinement and GPU-Accelerated Mesh Adaptivity</h3>
+                    <p class="text-sm font-semibold text-blue-700">Mathematical Sciences Research Institute Undergraduate Program (MSRI-UP) Berkeley, California — Research Experiences for Undergraduates</p>
+                    <p class="text-xs text-slate-500">June 2026 – July 2026</p>
+                    <p class="text-xs text-slate-500">Research Directors: Dr. Johnny Guzman and Dr. Maurice Fabien | Collaborators: Izzy Comas-Soares, Marek Hurdle & Elizabeth Rubio</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Undergraduate research experience in numerical methods for differential equations.</li>
+                        <li>With research group, we created novel mesh refinement and derefinement subroutines we named PESTO (Propagation-free Element Subdivision and Topology Operations) that utilizes nonconforming triangulation with hanging nodes.</li>
+                        <li>Plan to continue working on project to implement parallelism to refine multiple smaller sections simultaneously with coding done in <strong>Python</strong> and <strong>Matlab</strong>.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3: SCIP Python -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Machine Learning for Biology in Python</h3>
+                    <p class="text-sm font-semibold text-blue-700">San Francisco State University, Remote — Independent Research</p>
+                    <p class="text-xs text-slate-500">Science Coding Immersion Program (SCIP) | June 2026 - July 2026</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Analyzing data from biology and public health using machine learning techniques (supervised and unsupervised learning) and libraries (<strong>Scikit, Pandas, Numpy</strong>) in <strong>Python</strong>.</li>
+                        <li>Exploring CalEnviroScreen and METABRIC datasets, scaling data and exploring structure with PCA, K-means clustering, hierarchical clustering and dendrograms, classification modeling, decision trees for classifying high asthma burden, and random forest models.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 4: Wealth Distribution -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Wealth Distribution and Family Income in Alameda County in R</h3>
+                    <p class="text-sm font-semibold text-blue-700">Sonoma State University, Rohnert Park, CA — Undergraduate Researcher</p>
+                    <p class="text-xs text-slate-500">Department of Mathematics and Statistics | January 2026 - May 2026 | Advisor: Dr. Elaine Newman</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Implemented a multiple linear regression model in <strong>R</strong> to forecast family income trends in Alameda County and utilized feature engineering to identify best predictors.</li>
+                        <li>Found connections in data between family income, educational attainment, employment, and number of children in household.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 5: Convergence in Distribution -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Convergence in Distribution</h3>
+                    <p class="text-sm font-semibold text-blue-700">Sonoma State University, Rohnert Park, CA — Undergraduate Researcher</p>
+                    <p class="text-xs text-slate-500">McNair Scholars Program & Department of Mathematics and Statistics | January 2026 – May 2026</p>
+                    <p class="text-xs text-slate-500">Advisor: Dr. Rodrigo Gaitan | Collaborators: Ryan Saetern & Micah Reyes</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Used methods from real analysis and probability theory to explain how to estimate parameters to beginning statistics students.</li>
+                        <li>Created graphs, poster, and presentation using <strong>R, Mathematica, StatKey, LaTeX, Beamer</strong>. The project is research conducted for the McNair Scholars Program.</li>
+                    </ul>
+                </div>
+                                <!-- Project 6: Wine Industry -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Minority Report: Diversifying Consumer Demographics in the Wine Industry</h3>
+                    <p class="text-sm font-semibold text-blue-700">Sonoma State University, Rohnert Park, CA — Undergraduate Researcher</p>
+                    <p class="text-xs text-slate-500">Grapes Expectations Research Lab, Wine Business Institute | January 2026 – May 2026</p>
+                    <p class="text-xs text-slate-500">Advisor: Dr. InHaeng Jung | Collaborators: Tavis Brown</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Examined how ethnic identity and immigration status influences a consumer’s relationship with luxury products like wine.</li>
+                        <li>Conducted studies 1 & 2 using Process models, ANOVA, Independent t-tests and general statistical analysis through <strong>SPSS</strong> to examine the differences in wine perception and consumption among various ethnic groups. Awarded Koret Scholarship for work on this project.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 7: Analyzing Data in R -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Analyzing Data in R</h3>
+                    <p class="text-sm font-semibold text-blue-700">San Francisco State University, Remote — Independent Research</p>
+                    <p class="text-xs text-slate-500">Science Coding Immersion Program (SCIP) | June 2025 - July 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Analyzing environmental systems and various diseases by building models in <strong>R</strong>.</li>
+                        <li>The subprojects we looked at included beach data, covid vaccinations tracking and pandemic waves, microbiomes and microbial communities, college students in the US, restoration ecology, and Alzheimer’s data.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 8: Sustainability -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">SRJC Students’ Attitudes Towards Sustainability</h3>
+                    <p class="text-sm font-semibold text-blue-700">Santa Rosa Junior College, Santa Rosa, CA — Undergraduate Researcher</p>
+                    <p class="text-xs text-slate-500">Ramp to Research Poster Project | January 2025 – August 2025 | Advisor: Dr. Kruti Darji</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-2">
+                        <li>Analyzed positive relationships between students and their attitudes on sustainability and ways to improve campus sustainability.</li>
+                        <li>Conducted analysis using Excel, Google Spreadsheets and StatCrunch using Independent t-tests and ANOVA.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presentations Section -->
+        <section id="presentations" class="scroll-mt-20 space-y-4">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900">PRESENTATIONS</h2>
+            <ul class="space-y-3 text-sm text-slate-700 list-disc pl-5">
+                <li>“Pesto: Nonconforming Mesh Refinement and Derefinement”. To be presented at the National Association of Mathematicians Undergraduate MATHFest. September 26, 2026.</li>
+                <li>“Pesto: Nonconforming Mesh Refinement and Derefinement”. To be presented at the SACNAS Annual Conference. October 30, 2026.</li>
+                <li>“Pesto: Nonconforming Mesh Refinement and Derefinement”. To be presented at the Joint Mathematics Meetings. January 13, 2016.</li>
+                <li>“Convergence in Distribution”. Presented at Sonoma State University Mathematics & Statistics Department Student Faculty Seminar, Rohnert Park, California. April 14, 2026.</li>
+                <li>“Convergence in Distribution”. Presented at Sonoma State University Research, Scholarship & Creativity Symposium, Rohnert Park, California. April 28, 2026.</li>
+                <li>“Convergence in Distribution”. Presented at Sonoma State University Math Festival, Rohnert Park, California. April 29, 2026.</li>
+                <li>“Minority Report: Diversifying the Wine Industry”. Presented at CSU Student Research Competition, San Jose, California. April 24, 2026.</li>
+                <li>“Minority Report: Diversifying the Wine Industry”. Presented at Sonoma State University Research, Scholarship & Creativity Symposium, Rohnert Park, California. April 28, 2026.</li>
+                <li>“Effects of Climate Change on Valley Fever: A Markov Model in R”. Presented at Sonoma State University Research, Scholarship & Creativity Symposium, Rohnert Park, California. April 28, 2026.</li>
+                <li>“Effects of Climate Change on Valley Fever: A Markov Model in R”. Presented at Sonoma State University Mathematics & Statistics Department Student Faculty Seminar, Rohnert Park, California.</li>
+                <li>“Effects of Climate Change on Valley Fever: A Markov Model in R”. Presented at Sonoma State University Math Festival, Rohnert Park, California. April 29, 2026.</li>
+                <li>“Wealth Distribution & Family Income in Alameda County”. Presented at Sonoma State University Research, Scholarship & Creativity Symposium, Rohnert Park, California. April 28, 2026.</li>
+                <li>“Wealth Distribution & Family Income in Alameda County”. Presented at Sonoma State University Mathematics Festival, Rohnert Park, California. April 28, 2026.</li>
+                <li>“Wealth Distribution & Family Income in Alameda County”. Presented at Infinite Learning & Resource Center (ILRC) Community Research Symposium, Santa Rosa, California. May 9, 2026.</li>
+                <li>Sonia Kovalevsky Math Day Panelist, Sonoma State University, Rohnert Park, California. February 21st 2026.</li>
+            </ul>
+        </section>
+
+        <!-- Teaching & Work Experience Section -->
+        <section id="experience" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900">TEACHING & WORK EXPERIENCE</h2>
+            <div class="space-y-6">
+                <!-- Exp 1 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Mathematics Tutor</h3>
+                    <p class="text-sm font-semibold text-blue-700">Learning and Academic Resource Center (LARC), Sonoma State University, Rohnert Park, CA</p>
+                    <p class="text-xs text-slate-500">August 2026 - May 2027</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Courses: BIOL 110, MATH 161, MATH 161A, MATH 165, MATH 165A, MATH 180, MATH 220, MATH 222, MATH 241, MATH 265, MATH 340, MATH 345</li>
+                        <li>Embedded tutor for Math 161A (TA for course)</li>
+                    </ul>
+                </div>
+                <!-- Exp 2 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Mathematics Grader - Math 185: Introduction to Data Science (Data 101)</h3>
+                    <p class="text-sm font-semibold text-blue-700">Sonoma State University, Rohnert Park, CA</p>
+                    <p class="text-xs text-slate-500">Spring 2026 & Fall 2026</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Revised, commented, and graded <strong>R & Python</strong> assignments and projects. 11 students in class.</li>
+                        <li>Assignments included data visualization, modeling, and natural language processing</li>
+                    </ul>
+                </div>
+                <!-- Exp 3 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Sustainability Intern</h3>
+                    <p class="text-sm font-semibold text-blue-700">City of Pinole (Contra Costa County), Rising Sun Center for Opportunity, Remote</p>
+                    <p class="text-xs text-slate-500">August 2025 - November 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Researched sustainable initiatives for the city to implement by meeting with non-profits in the Bay Area to discuss ways they could improve the city’s green incentives. Created webpages for the city’s website about electric vehicles and solar panels. Externship portion.</li>
+                    </ul>
+                </div>
+                <!-- Exp 4 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Summer Program Manager</h3>
+                    <p class="text-sm font-semibold text-blue-700">Rising Sun Center for Opportunity, San Rafael, CA & Oakland, CA</p>
+                    <p class="text-xs text-slate-500">June 2025 - August 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Co-led a team of 13 youth in delivering sustainable and environmentally conscious services, building strong communication and leadership skills. Conducted client outreach, achieving second-highest bookings across 4 Bay Area sites. Managed scheduling and communications using Salesforce and Google Workspace.</li>
+                    </ul>
+                </div>
+                                <!-- Exp 5 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Schreiber Foods Remote Extern</h3>
+                    <p class="text-sm font-semibold text-blue-700">Extern, Remote</p>
+                    <p class="text-xs text-slate-500">May 2025 - June 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Accepted into community college student track to learn how to minimize food waste at Schreiber Foods facilities and received $500 stipend upon completion of deliverables.</li>
+                    </ul>
+                </div>
+                <!-- Exp 6 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Outreach Intern</h3>
+                    <p class="text-sm font-semibold text-blue-700">Turning Green (Conscious Kitchen), Remote Bay Area</p>
+                    <p class="text-xs text-slate-500">June 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Conducted outreach to farms in California, particularly in the Central Valley and Central Coast for road trip tours around California.</li>
+                    </ul>
+                </div>
+                <!-- Exp 7 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Organic School Food Systems Research Assistant</h3>
+                    <p class="text-sm font-semibold text-blue-700">Turning Green (Conscious Kitchen), Remote Bay Area</p>
+                    <p class="text-xs text-slate-500">March 2025 - May 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Cleaning, entering, and organizing data on food systems in California schools. Researching about the types of ingredients and foods that are served in California public schools and how the health of students in vulnerable communities are affected.</li>
+                    </ul>
+                </div>
+                <!-- Exp 8 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Road Trip Team Member (Planning & Logistics)</h3>
+                    <p class="text-sm font-semibold text-blue-700">Turning Green (Conscious Kitchen), Remote Bay Area, CA</p>
+                    <p class="text-xs text-slate-500">April 2025 - June 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Researched and created 3 briefs about the Bay Area region for upcoming road trips across California to visit different farms, farm-to-table restaurants, schools, and local officials. Internal team member supporting the road trip team by compiling a list of county colleges and universities, and local and state officials. Helped compile a list of over 100 individuals.</li>
+                    </ul>
+                </div>
+                <!-- Exp 9 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Tutor</h3>
+                    <p class="text-sm font-semibold text-blue-700">Champion Tutoring & Sports, Rohnert Park, CA</p>
+                    <p class="text-xs text-slate-500">February 2025 - April 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Tutored middle school students at Technology Middle School’s Boys & Girls Club who were at risk of failing. Students achieved a minimum grade of B minus.</li>
+                    </ul>
+                </div>
+                <!-- Exp 10 -->
+                <div class="space-y-1">
+                    <h3 class="font-bold text-slate-900 text-lg">Data Intern</h3>
+                    <p class="text-sm font-semibold text-blue-700">CGS, Santa Rosa, CA / Hybrid</p>
+                    <p class="text-xs text-slate-500">January 2025 - April 2025</p>
+                    <ul class="list-disc pl-5 text-slate-600 text-sm space-y-1 mt-1">
+                        <li>Analyzed participant data for a non-profit so they could grow their presence in Sonoma County.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Honors Section -->
+        <section id="awards" class="scroll-mt-20 space-y-4">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900">AWARDS & HONORS</h2>
+            <ul class="space-y-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Wine Industry Scholars Program (WISP), Sonoma State University, \$2500, Fall 2026 - Spring 2027</li>
+                <li>Gifted Membership to American Statistical Association, Sonoma State University Mathematics and Statistics Department, Spring 2026</li>
+                <li>Gifted Membership to National Association of Mathematicians, Sonoma State University Mathematics and Statistics Department, Spring 2026</li>
+                <li>1st Place Award, Infinite Learning & Resource Center (ILRC) Community Research Symposium, \$75, Spring 2026</li>
+                <li>Edgar and Beulah Dryden Fund Scholarship, Sonoma State University, \$750, Fall 2026 - Spring 2027</li>
+                <li>SSU 40th CSU Student Research Competition Representative, Part of 0.04% of CSU students presenting research at this competition, April 24, 2026</li>
+                <li>Koret Scholarship, Sonoma State University, \$500, Spring 2026</li>
+                <li>President's Scholarship, Sonoma State University, \$2000, Fall 2025 - Spring 2026</li>
+                <li>Docia Patchett Teaching Scholarship, Santa Rosa Junior College, \$950, Fall 2025 - Spring 2026</li>
+                <li>Hermelinda Diaz Blume EOPS Scholarship, Santa Rosa Junior College, \$500, Fall 2025 - Spring 2026</li>
+                <li>SRJC Retirees and Associates Scholarship, Santa Rosa Junior College, \$1,500, Fall 2025 - Spring 2026</li>
+                <li>Carol Cochran Schaffner Education Scholarship, Santa Rosa Junior College, \$1,500, Fall 2024 - Spring 2025</li>
+                <li>Joseph E. Kinberg Memorial Scholarship, Sonoma State University, \$1000, Fall 2024 - Spring 2025</li>
+                <li>Osher/Lahm Scholar Award, Santa Rosa Junior College, \$1,450, Fall 2024 - Spring 2025</li>
+                <li>Stephen Schuck STEM Award, Santa Rosa Junior College, \$1,000, Fall 2024 - Spring 2025</li>
+                <li>Doyle Scholarship, Santa Rosa Junior College, \$2,900, Fall 2023 - Spring 2025</li>
+            </ul>
+        </section>
+
+        <!-- Activities & Extracurriculars -->
+        <section id="activities" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900">ACTIVITIES & EXTRACURRICULARS</h2>
+            <ul class="space-y-2 text-sm text-slate-700 list-disc pl-5">
+                <li>SACNAS Seawolves, Treasurer, Fall 2026 - Present</li>
+                <li>Math & Stats Club, Member, Fall 2026 - Present</li>
+                <li>Combat Robotics Club, Member, Fall 2026 - Present</li>
+                <li>Grad Studies Book Club, Member, Fall 2026 - Present</li>
+                <li>
+                    <strong>Content Creator, @sanriocharactersdomath on TikTok, June 2023 - July 2024</strong>
+                    <p class="text-slate-600 pl-4 mt-0.5">Created TikToks teaching viewers concepts from Calculus 1. Reached 40,000 views on most watched video and achieved over 880 followers.</p>
+                </li>
+            </ul>
+
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900 pt-4">AFFILIATIONS</h2>
+            <ul class="space-y-1 text-sm text-slate-700 list-disc pl-5">
+                <li>Facilitated Graduate Admissions Program (F-GAP), Fall 2026 - Present</li>
+                <li>Society for Industrial and Applied Mathematics (SIAM), July 2026 - Present</li>
+                <li>American Statistical Association (ASA), Spring 2026 - Present</li>
+                <li>National Association of Mathematicians (NAM), Spring 2026 - Present</li>
+                <li>Society for Advancement of Chicanos and Native Americans in Science (SACNAS), Spring 2026 - Present</li>
+                <li>Louis Stokes Alliances for Minority Participation (LSAMP)/CSU STEM Pathways and Research Alliance (CSU-SPaRA), Spring 2026 - Present</li>
+                <li>McNair Scholars Program, Fall 2025 - Present</li>
+                <li>Mathematics, Engineering, Science Achievement (MESA), Fall 2025 - Present</li>
+                <li>TRIO SSS, Fall 2025 - Present</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 text-slate-900 pt-4">RELEVANT COURSEWORK</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1 text-sm text-slate-700 list-disc pl-5">
+                <li>CS 10A - Introduction to Programming Methodologies (4 Units)</li>
+                <li>Math 180 - Computing for Mathematics and Science (2 Units)</li>
+                <li>Math 241 - Linear Algebra with Applications in Differential Equations (4 Units)</li>
+                <li>Math 265 - Intermediate Applied Statistics with R (4 Units)</li>
+                <li>Math 340 - Real Analysis 1 (4 Units)</li>
+                <li>Math 345 - Probability Theory (4 Units)</li>
+                <li>Math 322 - Linear Algebra (4 Units)</li>
+                <li>Math 445 - Mathematical Statistics and Operation Research (4 Units)</li>
+                <li>Math 465 - Experimental Design and Regression Analysis (4 Units)</li>
+                <li>Math 485 - Mathematical Epidemiology Research Group (2 Units)*</li>
+                <li>Math 495 - Special Studies: Convergence in Distribution & Probability (2 Units)</li>
+                <li>Math 352 - Numerical Analysis**</li>
+
+
